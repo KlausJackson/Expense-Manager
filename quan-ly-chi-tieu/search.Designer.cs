@@ -162,10 +162,10 @@
             this.txGhiChu.BackColor = System.Drawing.Color.White;
             this.txGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txGhiChu.ForeColor = System.Drawing.Color.Black;
-            this.txGhiChu.Location = new System.Drawing.Point(71, 8);
+            this.txGhiChu.Location = new System.Drawing.Point(107, 8);
             this.txGhiChu.Multiline = true;
             this.txGhiChu.Name = "txGhiChu";
-            this.txGhiChu.Size = new System.Drawing.Size(322, 207);
+            this.txGhiChu.Size = new System.Drawing.Size(286, 207);
             this.txGhiChu.TabIndex = 8;
             // 
             // label6
@@ -174,9 +174,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(7, 8);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 29);
+            this.label6.Size = new System.Drawing.Size(94, 29);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Note";
+            this.label6.Text = "Ghi chú";
             // 
             // tags
             // 
@@ -202,7 +202,7 @@
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(112, 44);
             this.searchButton.TabIndex = 12;
-            this.searchButton.Text = "Search";
+            this.searchButton.Text = "Tìm";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
@@ -376,7 +376,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "search";
-            this.Text = "Search";
+            this.Text = "search";
             this.Load += new System.EventHandler(this.search_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
