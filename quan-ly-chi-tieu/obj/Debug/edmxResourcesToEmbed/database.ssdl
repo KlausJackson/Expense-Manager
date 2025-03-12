@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qlctModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="categories">
+    <Key>
+      <PropertyRef Name="catID" />
+    </Key>
+    <Property Name="catID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="expenses">
+    <Key>
+      <PropertyRef Name="expID" />
+    </Key>
+    <Property Name="expID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="catID" Type="int" />
+  </EntityType>
+  <EntityType Name="income">
+    <Key>
+      <PropertyRef Name="incID" />
+    </Key>
+    <Property Name="incID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="catID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'qlct.dbo.me' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="me">
+    <Key>
+      <PropertyRef Name="balance" />
+    </Key>
+    <Property Name="balance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__expenses__catID__5070F446">
+    <End Role="categories" Type="Self.categories" Multiplicity="0..1" />
+    <End Role="expenses" Type="Self.expenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="catID" />
+      </Principal>
+      <Dependent Role="expenses">
+        <PropertyRef Name="catID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__income__catID__534D60F1">
+    <End Role="categories" Type="Self.categories" Multiplicity="0..1" />
+    <End Role="income" Type="Self.income" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="catID" />
+      </Principal>
+      <Dependent Role="income">
+        <PropertyRef Name="catID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="qlctModelStoreContainer">
+    <EntitySet Name="categories" EntityType="Self.categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="expenses" EntityType="Self.expenses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="income" EntityType="Self.income" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="me" EntityType="Self.me" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [me].[balance] AS [balance]
+    FROM [dbo].[me] AS [me]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__expenses__catID__5070F446" Association="Self.FK__expenses__catID__5070F446">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="expenses" EntitySet="expenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__income__catID__534D60F1" Association="Self.FK__income__catID__534D60F1">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="income" EntitySet="income" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

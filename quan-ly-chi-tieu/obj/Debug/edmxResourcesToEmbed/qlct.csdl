@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qlctModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="catID" />
+    </Key>
+    <Property Name="catID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="monthlySpend" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="userID" Type="Int32" />
+    <NavigationProperty Name="expenses" Relationship="Self.FK__expenses__catID__5070F446" FromRole="categories" ToRole="expenses" />
+    <NavigationProperty Name="incomes" Relationship="Self.FK__income__catID__5535A963" FromRole="categories" ToRole="income" />
+    <NavigationProperty Name="user" Relationship="Self.fku" FromRole="categories" ToRole="users" />
+  </EntityType>
+  <EntityType Name="expens">
+    <Key>
+      <PropertyRef Name="expID" />
+    </Key>
+    <Property Name="expID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="catID" Type="Int32" />
+    <NavigationProperty Name="category" Relationship="Self.FK__expenses__catID__5070F446" FromRole="expenses" ToRole="categories" />
+    <NavigationProperty Name="user" Relationship="Self.FK__expenses__userID__4F7CD00D" FromRole="expenses" ToRole="users" />
+  </EntityType>
+  <EntityType Name="income">
+    <Key>
+      <PropertyRef Name="incID" />
+    </Key>
+    <Property Name="incID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="catID" Type="Int32" />
+    <NavigationProperty Name="category" Relationship="Self.FK__income__catID__5535A963" FromRole="income" ToRole="categories" />
+    <NavigationProperty Name="user" Relationship="Self.FK__income__userID__5441852A" FromRole="income" ToRole="users" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="passwd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="categories" Relationship="Self.fku" FromRole="users" ToRole="categories" />
+    <NavigationProperty Name="expenses" Relationship="Self.FK__expenses__userID__4F7CD00D" FromRole="users" ToRole="expenses" />
+    <NavigationProperty Name="incomes" Relationship="Self.FK__income__userID__5441852A" FromRole="users" ToRole="income" />
+  </EntityType>
+  <Association Name="FK__expenses__catID__5070F446">
+    <End Role="categories" Type="Self.category" Multiplicity="0..1" />
+    <End Role="expenses" Type="Self.expens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="catID" />
+      </Principal>
+      <Dependent Role="expenses">
+        <PropertyRef Name="catID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__income__catID__5535A963">
+    <End Role="categories" Type="Self.category" Multiplicity="0..1" />
+    <End Role="income" Type="Self.income" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="catID" />
+      </Principal>
+      <Dependent Role="income">
+        <PropertyRef Name="catID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fku">
+    <End Role="users" Type="Self.user" Multiplicity="0..1" />
+    <End Role="categories" Type="Self.category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="categories">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__expenses__userID__4F7CD00D">
+    <End Role="users" Type="Self.user" Multiplicity="1" />
+    <End Role="expenses" Type="Self.expens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="expenses">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__income__userID__5441852A">
+    <End Role="users" Type="Self.user" Multiplicity="1" />
+    <End Role="income" Type="Self.income" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="income">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="qlctEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="expenses" EntityType="Self.expens" />
+    <EntitySet Name="incomes" EntityType="Self.income" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK__expenses__catID__5070F446" Association="Self.FK__expenses__catID__5070F446">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="expenses" EntitySet="expenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__income__catID__5535A963" Association="Self.FK__income__catID__5535A963">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="income" EntitySet="incomes" />
+    </AssociationSet>
+    <AssociationSet Name="fku" Association="Self.fku">
+      <End Role="users" EntitySet="users" />
+      <End Role="categories" EntitySet="categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__expenses__userID__4F7CD00D" Association="Self.FK__expenses__userID__4F7CD00D">
+      <End Role="users" EntitySet="users" />
+      <End Role="expenses" EntitySet="expenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__income__userID__5441852A" Association="Self.FK__income__userID__5441852A">
+      <End Role="users" EntitySet="users" />
+      <End Role="income" EntitySet="incomes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
