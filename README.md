@@ -19,6 +19,7 @@ This repo first commit: [Mar 13, 2025](https://github.com/KlausJackson/Expense-M
 
 ## Preview
 
+It takes a while to load this gif.
 ![Demo](Preview.gif)
 
 ## How To Contact Me
