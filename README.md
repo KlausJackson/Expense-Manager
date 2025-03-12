@@ -15,11 +15,11 @@ This Expense Manager is a lightweight (around 14MB) and efficient desktop applic
 ![Stars](https://img.shields.io/github/stars/KlausJackson/Expense-Manager.svg)
 ![Watchers](https://img.shields.io/github/watchers/KlausJackson/Expense-Manager.svg)
 
-This repo first commit: [Jan 18, 2024](https://github.com/KlausJackson/Expense-Manager/commits/main?after=2637ba4f72031e8af6516213d424f0ad5ac2f55d+69)
+This repo first commit: [Mar 13, 2025](https://github.com/KlausJackson/Expense-Manager/commits/main?after=2637ba4f72031e8af6516213d424f0ad5ac2f55d+69)
 
 ## Preview
 
-<video src="Preview.mp4" width="640" height="360" controls muted autoplay loop></video>
+![Demo](Preview.gif)
 
 ## How To Contact Me
 
