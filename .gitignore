@@ -1,0 +1,64 @@
+# Compiled Object files
+[Dd]ebug/
+[Rr]elease/
+obj/
+*.suo
+*.user
+*.pdb
+*.idb
+*.log
+*.bak
+*.tmp
+*.swp
+*.swp*
+
+# Visual Studio files
+*.vs/
+*.csproj.user
+*.sln.docstates
+_ReSharper*/
+*.DotSettings.user
+
+# Build results
+[Bb]in/
+
+# NuGet Packages
+packages/
+*.nupkg
+*.snk
+
+# Tooling
+_PublishedWebsites/
+[Pp]ublish/
+[Pp]ublishing/
+
+# Windows thumbnail cache files
+Thumbs.db
+[Dd]esktop.ini
+
+# Dependency Check
+dependency-check-report.html
+
+# Test Results
+TestResults/
+*.trx
+
+# StyleCop
+StyleCopReport.xml
+
+# Code Analysis
+*.codeanalysis/
+*.ruleset
+
+# Miscellaneous garbage
+*.cache
+*.resharper.user
+*.lst
+*.orig
+*.rpt
+*.orig*
+
+# LightSwitch files
+ClientBin/
+ServiceConfiguration.cscfg
+ServiceConfiguration.Local.cscfg

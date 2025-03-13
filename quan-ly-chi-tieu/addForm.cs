@@ -257,9 +257,6 @@ namespace quan_ly_chi_tieu
                 }
                 label3.Text = "Định mức chi hàng tháng";
                 label1.Visible = label2.Visible = txGhiChu.Visible = ngay.Visible = false;
-                this.Size = new Size(600, 200);
-                button1.Location = new Point(200, 100);
-                button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             }
         }
 

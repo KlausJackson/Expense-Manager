@@ -22,10 +22,11 @@ namespace quan_ly_chi_tieu
             this.userID = userID;
             DataAccess = new DataAccess(connectionString);
             Helper = new Helper(connectionString, dataCat, reloadYear, userID);
-            ChartControl = new ChartControl(year, chart1);
+            ChartControl = new ChartControl(year, month, chart1);
             exportExpense.SelectedIndex = 0;
             exportIncome.SelectedIndex = 0;
             chartChoice.SelectedIndex = 0;
+            month.SelectedIndex = 0;
         }
 
         private void loader()
@@ -76,6 +77,7 @@ namespace quan_ly_chi_tieu
         {
             string query = "SELECT DISTINCT YEAR(date) FROM expenses WHERE userID = @userID UNION SELECT DISTINCT YEAR(date) FROM income WHERE userID = @userID";
             DataAccess.reloadData(query, null, userID, year);
+            year.SelectedIndex = year.Items.Count - 1;
         }
 
 

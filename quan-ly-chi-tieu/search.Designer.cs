@@ -377,6 +377,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "search";
             this.Text = "search";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.search_FormClosing);
             this.Load += new System.EventHandler(this.search_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);

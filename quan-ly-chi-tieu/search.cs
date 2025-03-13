@@ -117,5 +117,10 @@ namespace quan_ly_chi_tieu
             }
             tags.DataSource = names;
         }
+
+        private void search_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            reload(dt, dtgv);
+        }
     }
 }

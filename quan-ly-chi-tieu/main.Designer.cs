@@ -28,49 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataExpense = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.uploadExpense = new System.Windows.Forms.Button();
+            this.editExpense = new System.Windows.Forms.Button();
+            this.account = new System.Windows.Forms.Button();
+            this.downloadExpense = new System.Windows.Forms.Button();
             this.exportExpense = new System.Windows.Forms.ComboBox();
+            this.delExpense = new System.Windows.Forms.Button();
+            this.findExpense = new System.Windows.Forms.Button();
+            this.addExpense = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.uploadIncome = new System.Windows.Forms.Button();
+            this.editIncome = new System.Windows.Forms.Button();
+            this.account2 = new System.Windows.Forms.Button();
+            this.downloadIncome = new System.Windows.Forms.Button();
             this.exportIncome = new System.Windows.Forms.ComboBox();
             this.dataIncome = new System.Windows.Forms.DataGridView();
+            this.delIncome = new System.Windows.Forms.Button();
+            this.findIncome = new System.Windows.Forms.Button();
+            this.addIncome = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.chartChoice = new System.Windows.Forms.ComboBox();
             this.year = new System.Windows.Forms.ComboBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataCat = new System.Windows.Forms.DataGridView();
-            this.uploadExpense = new System.Windows.Forms.Button();
-            this.editExpense = new System.Windows.Forms.Button();
-            this.account = new System.Windows.Forms.Button();
-            this.downloadExpense = new System.Windows.Forms.Button();
-            this.delExpense = new System.Windows.Forms.Button();
-            this.findExpense = new System.Windows.Forms.Button();
-            this.addExpense = new System.Windows.Forms.Button();
-            this.editIncome = new System.Windows.Forms.Button();
-            this.account2 = new System.Windows.Forms.Button();
-            this.downloadIncome = new System.Windows.Forms.Button();
-            this.delIncome = new System.Windows.Forms.Button();
-            this.findIncome = new System.Windows.Forms.Button();
-            this.addIncome = new System.Windows.Forms.Button();
             this.editCat = new System.Windows.Forms.Button();
+            this.dataCat = new System.Windows.Forms.DataGridView();
             this.account3 = new System.Windows.Forms.Button();
             this.delCat = new System.Windows.Forms.Button();
             this.addCat = new System.Windows.Forms.Button();
-            this.uploadIncome = new System.Windows.Forms.Button();
+            this.month = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataExpense)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -90,36 +91,36 @@
             this.dataExpense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataExpense.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataExpense.BackgroundColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataExpense.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataExpense.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataExpense.GridColor = System.Drawing.Color.LightGray;
             this.dataExpense.Location = new System.Drawing.Point(6, 56);
             this.dataExpense.MultiSelect = false;
             this.dataExpense.Name = "dataExpense";
             this.dataExpense.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataExpense.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataExpense.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataExpense.RowHeadersWidth = 51;
             this.dataExpense.RowTemplate.Height = 24;
             this.dataExpense.Size = new System.Drawing.Size(963, 590);
@@ -159,224 +160,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Chi Tiêu";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // exportExpense
-            // 
-            this.exportExpense.BackColor = System.Drawing.Color.White;
-            this.exportExpense.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.exportExpense.ForeColor = System.Drawing.Color.Black;
-            this.exportExpense.FormattingEnabled = true;
-            this.exportExpense.Items.AddRange(new object[] {
-            "Excel",
-            "JSON",
-            "CSV"});
-            this.exportExpense.Location = new System.Drawing.Point(412, 10);
-            this.exportExpense.Name = "exportExpense";
-            this.exportExpense.Size = new System.Drawing.Size(128, 37);
-            this.exportExpense.TabIndex = 17;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.uploadIncome);
-            this.tabPage2.Controls.Add(this.editIncome);
-            this.tabPage2.Controls.Add(this.account2);
-            this.tabPage2.Controls.Add(this.downloadIncome);
-            this.tabPage2.Controls.Add(this.exportIncome);
-            this.tabPage2.Controls.Add(this.dataIncome);
-            this.tabPage2.Controls.Add(this.delIncome);
-            this.tabPage2.Controls.Add(this.findIncome);
-            this.tabPage2.Controls.Add(this.addIncome);
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(977, 654);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Thu Nhập";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // exportIncome
-            // 
-            this.exportIncome.BackColor = System.Drawing.Color.White;
-            this.exportIncome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.exportIncome.ForeColor = System.Drawing.Color.Black;
-            this.exportIncome.FormattingEnabled = true;
-            this.exportIncome.Items.AddRange(new object[] {
-            "Excel",
-            "JSON",
-            "CSV"});
-            this.exportIncome.Location = new System.Drawing.Point(412, 9);
-            this.exportIncome.Name = "exportIncome";
-            this.exportIncome.Size = new System.Drawing.Size(129, 37);
-            this.exportIncome.TabIndex = 22;
-            // 
-            // dataIncome
-            // 
-            this.dataIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataIncome.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataIncome.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataIncome.BackgroundColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataIncome.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataIncome.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataIncome.GridColor = System.Drawing.Color.LightGray;
-            this.dataIncome.Location = new System.Drawing.Point(7, 57);
-            this.dataIncome.MultiSelect = false;
-            this.dataIncome.Name = "dataIncome";
-            this.dataIncome.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataIncome.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataIncome.RowHeadersWidth = 51;
-            this.dataIncome.RowTemplate.Height = 24;
-            this.dataIncome.Size = new System.Drawing.Size(961, 590);
-            this.dataIncome.TabIndex = 11;
-            this.dataIncome.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataIncome_CellClick);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.chartChoice);
-            this.tabPage3.Controls.Add(this.year);
-            this.tabPage3.Controls.Add(this.chart1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(977, 654);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Thống kê";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // chartChoice
-            // 
-            this.chartChoice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.chartChoice.BackColor = System.Drawing.Color.White;
-            this.chartChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.chartChoice.ForeColor = System.Drawing.Color.Black;
-            this.chartChoice.FormattingEnabled = true;
-            this.chartChoice.Items.AddRange(new object[] {
-            "Expense Distribution by Category",
-            "Category Expenses vs. Monthly Spend",
-            "Monthly Income Trend",
-            "Monthly Expense Trend",
-            "Monthly Income vs. Expenses"});
-            this.chartChoice.Location = new System.Drawing.Point(146, 9);
-            this.chartChoice.Name = "chartChoice";
-            this.chartChoice.Size = new System.Drawing.Size(823, 37);
-            this.chartChoice.TabIndex = 29;
-            this.chartChoice.SelectedIndexChanged += new System.EventHandler(this.chartChoice_SelectedIndexChanged);
-            // 
-            // year
-            // 
-            this.year.BackColor = System.Drawing.Color.White;
-            this.year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.year.ForeColor = System.Drawing.Color.Black;
-            this.year.FormattingEnabled = true;
-            this.year.Location = new System.Drawing.Point(8, 9);
-            this.year.Name = "year";
-            this.year.Size = new System.Drawing.Size(132, 37);
-            this.year.TabIndex = 26;
-            this.year.SelectedIndexChanged += new System.EventHandler(this.chartChoice_SelectedIndexChanged);
-            // 
-            // chart1
-            // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.CursorX.IsUserEnabled = true;
-            chartArea1.CursorX.IsUserSelectionEnabled = true;
-            chartArea1.CursorX.LineColor = System.Drawing.Color.DimGray;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(8, 52);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(969, 596);
-            this.chart1.TabIndex = 27;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.editCat);
-            this.tabPage4.Controls.Add(this.dataCat);
-            this.tabPage4.Controls.Add(this.account3);
-            this.tabPage4.Controls.Add(this.delCat);
-            this.tabPage4.Controls.Add(this.addCat);
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(977, 654);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Quản lý Chi tiêu";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // dataCat
-            // 
-            this.dataCat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataCat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataCat.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataCat.BackgroundColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataCat.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataCat.GridColor = System.Drawing.Color.LightGray;
-            this.dataCat.Location = new System.Drawing.Point(7, 54);
-            this.dataCat.MultiSelect = false;
-            this.dataCat.Name = "dataCat";
-            this.dataCat.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataCat.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataCat.RowHeadersWidth = 51;
-            this.dataCat.RowTemplate.Height = 24;
-            this.dataCat.Size = new System.Drawing.Size(963, 597);
-            this.dataCat.TabIndex = 25;
-            this.dataCat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCat_CellClick);
             // 
             // uploadExpense
             // 
@@ -441,6 +224,21 @@
             this.downloadExpense.UseVisualStyleBackColor = false;
             this.downloadExpense.Click += new System.EventHandler(this.downloadExpense_Click);
             // 
+            // exportExpense
+            // 
+            this.exportExpense.BackColor = System.Drawing.Color.White;
+            this.exportExpense.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.exportExpense.ForeColor = System.Drawing.Color.Black;
+            this.exportExpense.FormattingEnabled = true;
+            this.exportExpense.Items.AddRange(new object[] {
+            "Excel",
+            "JSON",
+            "CSV"});
+            this.exportExpense.Location = new System.Drawing.Point(412, 10);
+            this.exportExpense.Name = "exportExpense";
+            this.exportExpense.Size = new System.Drawing.Size(128, 37);
+            this.exportExpense.TabIndex = 17;
+            // 
             // delExpense
             // 
             this.delExpense.BackColor = System.Drawing.Color.Transparent;
@@ -486,6 +284,40 @@
             this.addExpense.TabIndex = 10;
             this.addExpense.UseVisualStyleBackColor = false;
             this.addExpense.Click += new System.EventHandler(this.addExpense_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.uploadIncome);
+            this.tabPage2.Controls.Add(this.editIncome);
+            this.tabPage2.Controls.Add(this.account2);
+            this.tabPage2.Controls.Add(this.downloadIncome);
+            this.tabPage2.Controls.Add(this.exportIncome);
+            this.tabPage2.Controls.Add(this.dataIncome);
+            this.tabPage2.Controls.Add(this.delIncome);
+            this.tabPage2.Controls.Add(this.findIncome);
+            this.tabPage2.Controls.Add(this.addIncome);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(977, 654);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Thu Nhập";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // uploadIncome
+            // 
+            this.uploadIncome.BackColor = System.Drawing.Color.Transparent;
+            this.uploadIncome.BackgroundImage = global::quan_ly_chi_tieu.Properties.Resources.upload;
+            this.uploadIncome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uploadIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadIncome.ForeColor = System.Drawing.Color.Transparent;
+            this.uploadIncome.Location = new System.Drawing.Point(603, 3);
+            this.uploadIncome.Name = "uploadIncome";
+            this.uploadIncome.Size = new System.Drawing.Size(50, 50);
+            this.uploadIncome.TabIndex = 29;
+            this.uploadIncome.UseVisualStyleBackColor = false;
+            this.uploadIncome.Click += new System.EventHandler(this.upload_Click);
             // 
             // editIncome
             // 
@@ -534,6 +366,65 @@
             this.downloadIncome.UseVisualStyleBackColor = false;
             this.downloadIncome.Click += new System.EventHandler(this.downloadIncome_Click);
             // 
+            // exportIncome
+            // 
+            this.exportIncome.BackColor = System.Drawing.Color.White;
+            this.exportIncome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.exportIncome.ForeColor = System.Drawing.Color.Black;
+            this.exportIncome.FormattingEnabled = true;
+            this.exportIncome.Items.AddRange(new object[] {
+            "Excel",
+            "JSON",
+            "CSV"});
+            this.exportIncome.Location = new System.Drawing.Point(412, 9);
+            this.exportIncome.Name = "exportIncome";
+            this.exportIncome.Size = new System.Drawing.Size(129, 37);
+            this.exportIncome.TabIndex = 22;
+            // 
+            // dataIncome
+            // 
+            this.dataIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataIncome.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataIncome.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataIncome.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataIncome.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataIncome.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataIncome.GridColor = System.Drawing.Color.LightGray;
+            this.dataIncome.Location = new System.Drawing.Point(7, 57);
+            this.dataIncome.MultiSelect = false;
+            this.dataIncome.Name = "dataIncome";
+            this.dataIncome.ReadOnly = true;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataIncome.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataIncome.RowHeadersWidth = 51;
+            this.dataIncome.RowTemplate.Height = 24;
+            this.dataIncome.Size = new System.Drawing.Size(961, 590);
+            this.dataIncome.TabIndex = 11;
+            this.dataIncome.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataIncome_CellClick);
+            // 
             // delIncome
             // 
             this.delIncome.BackColor = System.Drawing.Color.Transparent;
@@ -580,6 +471,88 @@
             this.addIncome.UseVisualStyleBackColor = false;
             this.addIncome.Click += new System.EventHandler(this.addIncome_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.month);
+            this.tabPage3.Controls.Add(this.chartChoice);
+            this.tabPage3.Controls.Add(this.year);
+            this.tabPage3.Controls.Add(this.chart1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(977, 654);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Thống kê";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // chartChoice
+            // 
+            this.chartChoice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.chartChoice.BackColor = System.Drawing.Color.White;
+            this.chartChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.chartChoice.ForeColor = System.Drawing.Color.Black;
+            this.chartChoice.FormattingEnabled = true;
+            this.chartChoice.Items.AddRange(new object[] {
+            "Expense Distribution by Category",
+            "Category Expenses vs. Monthly Spend",
+            "Monthly Income Trend",
+            "Monthly Expense Trend",
+            "Monthly Income vs. Expenses"});
+            this.chartChoice.Location = new System.Drawing.Point(237, 9);
+            this.chartChoice.Name = "chartChoice";
+            this.chartChoice.Size = new System.Drawing.Size(732, 37);
+            this.chartChoice.TabIndex = 29;
+            this.chartChoice.SelectedIndexChanged += new System.EventHandler(this.chartChoice_SelectedIndexChanged);
+            // 
+            // year
+            // 
+            this.year.BackColor = System.Drawing.Color.White;
+            this.year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.year.ForeColor = System.Drawing.Color.Black;
+            this.year.FormattingEnabled = true;
+            this.year.Location = new System.Drawing.Point(8, 9);
+            this.year.Name = "year";
+            this.year.Size = new System.Drawing.Size(132, 37);
+            this.year.TabIndex = 26;
+            this.year.SelectedIndexChanged += new System.EventHandler(this.chartChoice_SelectedIndexChanged);
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.CursorX.IsUserEnabled = true;
+            chartArea2.CursorX.IsUserSelectionEnabled = true;
+            chartArea2.CursorX.LineColor = System.Drawing.Color.DimGray;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(8, 52);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(969, 596);
+            this.chart1.TabIndex = 27;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.editCat);
+            this.tabPage4.Controls.Add(this.dataCat);
+            this.tabPage4.Controls.Add(this.account3);
+            this.tabPage4.Controls.Add(this.delCat);
+            this.tabPage4.Controls.Add(this.addCat);
+            this.tabPage4.Location = new System.Drawing.Point(4, 38);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(977, 654);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Quản lý Chi tiêu";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // editCat
             // 
             this.editCat.BackColor = System.Drawing.Color.Transparent;
@@ -595,6 +568,50 @@
             this.editCat.TabIndex = 26;
             this.editCat.UseVisualStyleBackColor = false;
             this.editCat.Click += new System.EventHandler(this.editCat_Click);
+            // 
+            // dataCat
+            // 
+            this.dataCat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataCat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataCat.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataCat.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataCat.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataCat.GridColor = System.Drawing.Color.LightGray;
+            this.dataCat.Location = new System.Drawing.Point(7, 54);
+            this.dataCat.MultiSelect = false;
+            this.dataCat.Name = "dataCat";
+            this.dataCat.ReadOnly = true;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCat.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataCat.RowHeadersWidth = 51;
+            this.dataCat.RowTemplate.Height = 24;
+            this.dataCat.Size = new System.Drawing.Size(963, 597);
+            this.dataCat.TabIndex = 25;
+            this.dataCat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCat_CellClick);
             // 
             // account3
             // 
@@ -643,20 +660,30 @@
             this.addCat.UseVisualStyleBackColor = false;
             this.addCat.Click += new System.EventHandler(this.addCat_Click);
             // 
-            // uploadIncome
+            // month
             // 
-            this.uploadIncome.BackColor = System.Drawing.Color.Transparent;
-            this.uploadIncome.BackgroundImage = global::quan_ly_chi_tieu.Properties.Resources.upload;
-            this.uploadIncome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.uploadIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uploadIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uploadIncome.ForeColor = System.Drawing.Color.Transparent;
-            this.uploadIncome.Location = new System.Drawing.Point(603, 3);
-            this.uploadIncome.Name = "uploadIncome";
-            this.uploadIncome.Size = new System.Drawing.Size(50, 50);
-            this.uploadIncome.TabIndex = 29;
-            this.uploadIncome.UseVisualStyleBackColor = false;
-            this.uploadIncome.Click += new System.EventHandler(this.upload_Click);
+            this.month.BackColor = System.Drawing.Color.White;
+            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month.ForeColor = System.Drawing.Color.Black;
+            this.month.FormattingEnabled = true;
+            this.month.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.month.Location = new System.Drawing.Point(146, 9);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(85, 37);
+            this.month.TabIndex = 30;
+            this.month.SelectedIndexChanged += new System.EventHandler(this.chartChoice_SelectedIndexChanged);
             // 
             // main
             // 
@@ -714,6 +741,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button uploadExpense;
         private System.Windows.Forms.Button uploadIncome;
+        private System.Windows.Forms.ComboBox month;
     }
 }
 
