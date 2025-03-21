@@ -18,7 +18,6 @@ namespace quan_ly_chi_tieu
         public main(int userID, string connectionString)
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
             this.userID = userID;
             DataAccess = new DataAccess(connectionString);
             Helper = new Helper(connectionString, dataCat, reloadYear, userID);

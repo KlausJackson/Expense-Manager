@@ -364,18 +364,5 @@ namespace quan_ly_chi_tieu
             }
             return dt;
         }
-
-
-        //private bool checkCell(DataGridView dtgv)
-        //{
-        //    int selectedRow = dtgv.SelectedCells[0].RowIndex;
-        //    if (dtgv.Rows[selectedRow].Cells[0].Value == null)
-        //    {
-        //        return false;
-        //    }
-        //    // show content in each column of the selected row and its datatype in messagebox
-        //    // MessageBox.Show(cell.OwningRow.Cells[cell.ColumnIndex].Value.ToString() + " " + cell.OwningRow.Cells[cell.ColumnIndex].ValueType.ToString());
-        //    return true;
-        //}
     }
 }

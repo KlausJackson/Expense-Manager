@@ -18,45 +18,31 @@ namespace quan_ly_chi_tieu
         public login()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
             this.connectionString = "Data Source=KlausJackson\\SQLEXPRESS;Initial Catalog=qlct;Integrated Security=True;";
         }
 
-
-
-        private void loadUser()
+        private int authentication()
         {
-            try
+            if (!checkTb()) return -1;
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                connection.Open();
+                string query = "SELECT userID FROM Users WHERE username = @username AND passwd = @passwd";
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    connection.Open();
-                    string query = "SELECT userID, username FROM Users";
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    command.Parameters.AddWithValue("@username", txUsername.Text);
+                    command.Parameters.AddWithValue("@passwd", hashPassword(txPasswd.Text));
+                    if (command.ExecuteScalar() == null)
                     {
-                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                        {
-                            DataTable users = new DataTable();
-                            adapter.Fill(users);
-                            dataUsers.DataSource = users;
-                            dataUsers.Columns[1].HeaderText = "Tên người dùng";
-                            dataUsers.Columns[0].Visible = false;
-                        }
+                        MessageBox.Show("Tên người dùng hoặc mật khẩu không đúng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return -1;
                     }
+                    return (int)command.ExecuteScalar();
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading users: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
-        private void login_Load(object sender, EventArgs e)
-        {
-            loadUser();
-        }
-
-        private void DeleteRelatedRecords(string tableName, string userid)
+        private void DeleteRelatedRecords(string tableName, int userid)
         {
             string query = $"DELETE FROM {tableName} WHERE userID = @userid";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -82,23 +68,32 @@ namespace quan_ly_chi_tieu
 
         private void delUser_Click(object sender, EventArgs e)
         {
-            if (dataUsers.SelectedCells.Count > 1)
+            int userID = authentication();
+            if (userID == -1) return;
+
+            foreach (Form form in Application.OpenForms)
             {
-                MessageBox.Show("Vui lòng chọn 1 người dùng cần xóa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (form is main)
+                {
+                    int main_userID = (form as main).userID;
+                    if (main_userID == userID)
+                    {
+                        MessageBox.Show("Không thể xóa người dùng đang đăng nhập", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
             }
+
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa người dùng này? Mọi dữ liệu của người dùng này sẽ bị xóa!", "Cảnh báo", 
             MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.No) return;
             try
             {
-                string userid = dataUsers.Rows[dataUsers.SelectedCells[0].RowIndex].Cells[0].Value.ToString();
-                DeleteRelatedRecords("expenses", userid);
-                DeleteRelatedRecords("income", userid);                
-                DeleteRelatedRecords("categories", userid);
-                DeleteRelatedRecords("users", userid);
+                DeleteRelatedRecords("expenses", userID);
+                DeleteRelatedRecords("income", userID);                
+                DeleteRelatedRecords("categories", userID);
+                DeleteRelatedRecords("users", userID);
                 MessageBox.Show("Người dùng đã được xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                loadUser();
             }
             catch (Exception ex)
             {
@@ -146,7 +141,6 @@ namespace quan_ly_chi_tieu
                             if (command.ExecuteNonQuery() > 0)
                             {
                                 MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                loadUser();
                             }
                         }
                     }
@@ -173,46 +167,14 @@ namespace quan_ly_chi_tieu
             if (!checkTb()) return;
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT userID FROM Users WHERE username = @username AND passwd = @passwd";
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@username", txUsername.Text);
-                        command.Parameters.AddWithValue("@passwd", hashPassword(txPasswd.Text));
-                        if (command.ExecuteScalar() == null)
-                        {
-                            MessageBox.Show("Tên người dùng hoặc mật khẩu không đúng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        else
-                        {
-                            int userID = (int)command.ExecuteScalar();
-                            this.userID = userID;
-                            this.DialogResult = DialogResult.OK;
-                        }
-                    }
-                }
+                int userID = authentication();
+                if (userID == -1) return;
+                this.userID = userID;
+                this.DialogResult = DialogResult.OK;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void dataUsers_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataUsers.SelectedCells.Count == 1)
-            {
-                int rowIndex = e.RowIndex;
-                if (rowIndex >= 0)
-                {
-                    var cellValue = dataUsers.Rows[rowIndex].Cells[1].Value;
-                    txUsername.Text = cellValue.ToString();
-                    delUser.Visible = true;
-                }
-                else delUser.Visible = false;
             }
         }
     }

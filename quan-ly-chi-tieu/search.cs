@@ -16,7 +16,6 @@ namespace quan_ly_chi_tieu
         {
             InitializeComponent();
             this.reload = reload;
-            this.StartPosition = FormStartPosition.CenterScreen;
             this.dtgv = dtgv;
             this.cat = cat;
             this.type = type;

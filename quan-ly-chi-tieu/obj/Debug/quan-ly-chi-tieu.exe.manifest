@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="quan-ly-chi-tieu.exe" size="214480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="quan-ly-chi-tieu.exe" size="212432">
       <assemblyIdentity name="quan-ly-chi-tieu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7yKO2W5uG2NDC2V2Km8xXsFG77EiRzD85l58bSCubKc=</dsig:DigestValue>
+        <dsig:DigestValue>FbSC5kXJdllXxC8fSCYjD9nOoLcKJc02wd6STO+pw6I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -17,7 +17,6 @@ namespace quan_ly_chi_tieu
         public addForm(string connectionString, Action reload, string label, string button, int ID, List<object> cat, Action reloadYear)
         {
             InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
             this.connectionString = connectionString;
             this.reloadYear = reloadYear;
             this.reload = reload;

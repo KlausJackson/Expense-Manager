@@ -376,6 +376,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "search";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.search_FormClosing);
             this.Load += new System.EventHandler(this.search_Load);
