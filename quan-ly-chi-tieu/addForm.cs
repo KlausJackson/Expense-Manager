@@ -227,7 +227,7 @@ namespace quan_ly_chi_tieu
             {
                 label3.Text = "Định mức chi hàng tháng";
                 label1.Visible = label2.Visible = txGhiChu.Visible = ngay.Visible = false;
-                tag.DropDownStyle = ComboBoxStyle.DropDown;
+               // tag.DropDownStyle = ComboBoxStyle.DropDown;
             }
             if (this.Text == "Sửa chi tiêu") getData("expenses");
 

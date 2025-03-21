@@ -154,7 +154,7 @@ namespace quan_ly_chi_tieu
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi", "Lỗi: " + ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

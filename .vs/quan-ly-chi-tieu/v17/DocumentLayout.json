@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "E:\\Work\\Github\\Expense-Manager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|e:\\work\\github\\expense-manager\\quan-ly-chi-tieu\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|solutionrelative:quan-ly-chi-tieu\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|e:\\work\\github\\expense-manager\\quan-ly-chi-tieu\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|solutionrelative:quan-ly-chi-tieu\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|e:\\work\\github\\expense-manager\\quan-ly-chi-tieu\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|solutionrelative:quan-ly-chi-tieu\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|e:\\work\\github\\expense-manager\\quan-ly-chi-tieu\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|solutionrelative:quan-ly-chi-tieu\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|e:\\work\\github\\expense-manager\\quan-ly-chi-tieu\\chartcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE049A1D-B98F-4E04-9846-23C02A942778}|quan-ly-chi-tieu\\quan-ly-chi-tieu.csproj|solutionrelative:quan-ly-chi-tieu\\chartcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,19 +55,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "addForm.cs",
+              "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\addForm.cs",
+              "RelativeDocumentMoniker": "quan-ly-chi-tieu\\addForm.cs",
+              "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\addForm.cs",
+              "RelativeToolTip": "quan-ly-chi-tieu\\addForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:21:29.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "addForm.cs [Design]",
+              "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\addForm.cs",
+              "RelativeDocumentMoniker": "quan-ly-chi-tieu\\addForm.cs",
+              "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\addForm.cs [Design]",
+              "RelativeToolTip": "quan-ly-chi-tieu\\addForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:21:28.631Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.cs",
+              "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\login.cs",
+              "RelativeDocumentMoniker": "quan-ly-chi-tieu\\login.cs",
+              "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\login.cs",
+              "RelativeToolTip": "quan-ly-chi-tieu\\login.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:20:18.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.cs [Design]",
+              "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\login.cs",
+              "RelativeDocumentMoniker": "quan-ly-chi-tieu\\login.cs",
+              "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\login.cs [Design]",
+              "RelativeToolTip": "quan-ly-chi-tieu\\login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:20:16.55Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ChartControl.cs",
               "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\ChartControl.cs",
               "RelativeDocumentMoniker": "quan-ly-chi-tieu\\ChartControl.cs",
               "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\ChartControl.cs",
               "RelativeToolTip": "quan-ly-chi-tieu\\ChartControl.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAUwHMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAHMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T08:12:29.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "main.cs",
               "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\main.cs",
               "RelativeDocumentMoniker": "quan-ly-chi-tieu\\main.cs",
@@ -59,20 +125,18 @@
               "RelativeToolTip": "quan-ly-chi-tieu\\main.cs",
               "ViewState": "AgIAAMAAAAAAAAAAAAAuwMYAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T08:11:03.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T08:11:03.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "main.cs [Design]",
               "DocumentMoniker": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\main.cs",
               "RelativeDocumentMoniker": "quan-ly-chi-tieu\\main.cs",
               "ToolTip": "E:\\Work\\Github\\Expense-Manager\\quan-ly-chi-tieu\\main.cs [Design]",
               "RelativeToolTip": "quan-ly-chi-tieu\\main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T08:11:02.417Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-13T08:11:02.417Z"
             }
           ]
         }
