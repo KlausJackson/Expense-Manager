@@ -198,6 +198,11 @@ namespace quan_ly_chi_tieu
                 }
                 if (this.Text == "Sửa loại chi tiêu")
                 {
+                    if (!string.IsNullOrWhiteSpace(tag.Text))
+                    {
+                        MessageBox.Show("Please enter a valid name");
+                        return;
+                    }
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         connection.Open();

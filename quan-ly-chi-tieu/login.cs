@@ -177,5 +177,10 @@ namespace quan_ly_chi_tieu
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

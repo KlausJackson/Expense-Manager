@@ -65,7 +65,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(430, 450);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(412, 450);
             this.tableLayoutPanel3.TabIndex = 10;
             // 
             // panel4
@@ -76,7 +76,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 321);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(430, 129);
+            this.panel4.Size = new System.Drawing.Size(412, 129);
             this.panel4.TabIndex = 14;
             // 
             // loginButton
@@ -85,7 +85,7 @@
             this.loginButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(135, 67);
+            this.loginButton.Location = new System.Drawing.Point(126, 67);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(161, 45);
             this.loginButton.TabIndex = 8;
@@ -99,7 +99,7 @@
             this.signUp.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.signUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUp.Location = new System.Drawing.Point(142, 16);
+            this.signUp.Location = new System.Drawing.Point(133, 16);
             this.signUp.Name = "signUp";
             this.signUp.Size = new System.Drawing.Size(146, 45);
             this.signUp.TabIndex = 9;
@@ -115,7 +115,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 205);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(430, 116);
+            this.panel3.Size = new System.Drawing.Size(412, 116);
             this.panel3.TabIndex = 13;
             // 
             // label3
@@ -143,7 +143,7 @@
             this.txPasswd.Location = new System.Drawing.Point(43, 57);
             this.txPasswd.Name = "txPasswd";
             this.txPasswd.PasswordChar = '*';
-            this.txPasswd.Size = new System.Drawing.Size(344, 34);
+            this.txPasswd.Size = new System.Drawing.Size(326, 34);
             this.txPasswd.TabIndex = 5;
             // 
             // panel2
@@ -154,7 +154,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 87);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(430, 118);
+            this.panel2.Size = new System.Drawing.Size(412, 118);
             this.panel2.TabIndex = 12;
             // 
             // label2
@@ -181,7 +181,7 @@
             this.txUsername.ForeColor = System.Drawing.Color.Black;
             this.txUsername.Location = new System.Drawing.Point(43, 46);
             this.txUsername.Name = "txUsername";
-            this.txUsername.Size = new System.Drawing.Size(344, 34);
+            this.txUsername.Size = new System.Drawing.Size(326, 34);
             this.txUsername.TabIndex = 2;
             // 
             // panel1
@@ -191,7 +191,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(430, 87);
+            this.panel1.Size = new System.Drawing.Size(412, 87);
             this.panel1.TabIndex = 11;
             // 
             // delUser
@@ -200,7 +200,7 @@
             this.delUser.BackColor = System.Drawing.Color.IndianRed;
             this.delUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delUser.Location = new System.Drawing.Point(158, 13);
+            this.delUser.Location = new System.Drawing.Point(149, 13);
             this.delUser.Name = "delUser";
             this.delUser.Size = new System.Drawing.Size(115, 42);
             this.delUser.TabIndex = 10;
@@ -213,13 +213,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(430, 450);
+            this.ClientSize = new System.Drawing.Size(412, 450);
             this.Controls.Add(this.tableLayoutPanel3);
             this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.login_Load);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
